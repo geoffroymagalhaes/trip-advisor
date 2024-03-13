@@ -210,13 +210,18 @@ h1 {
   display: flex;
   overflow-x: scroll;
 }
-.scroll-container > div {
-  flex-shrink: 0;
-  width: calc((100% - 30px) / 3);
-  gap: 15px;
+.carousel-element {
+  width: calc(100% / 3);
+  background-color: aqua;
 }
-.scroll-container > div > img {
+.carousel-element > img {
   width: 100%;
-  aspect-ratio: 27 / 20;
-  object-fit: cover;
+}
+.carousel-element {
+  position: relative;
+}
+.circle-heart {
+  font-size: 30px;
+  color: white;
+  position: absolute;
 }
