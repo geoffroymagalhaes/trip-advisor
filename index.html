@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TripAdvisor</title>
+    <title>TripAdvisor</title><link rel="shortcut icon" href="./img/logo/tripadvisor_logo_icon_154487.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -14,8 +14,25 @@
   </head>
   <body>
 
-    <header>
+    <header class="sticky">
+      <div class="phone">
+       <div class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo-head">
+          <img src="./img/Tripadvisor-Logo.png" alt="" />
+        </div>
+         <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+       
+
+     </div>
       <section class="container">
+        
         <div class="logo-headers">
           <img src="./img/Tripadvisor-Logo.png" alt="" />
         </div>
@@ -33,10 +50,11 @@
             <p>Alertes</p>
           </div>
           <div class="button-login">
-            <p>Connectez-vous</p>
+            <p >Connectez-vous</p>
           </div>
           <div>
             <i class="fa-solid fa-cart-shopping"></i>
+            
             <p>Panier</p>
           </div>
         </div>
@@ -46,13 +64,13 @@
       <section class="container">
         <div class="titre">
           <h1><span>Explorez</span> Paris</h1>
-          <p>Les revenus influencent le choix des expériences présentées sur cette page : en savoir plus.</p>
+          <p>Les revenus influencent le choix des expériences présentées sur cette page : <span class="know-more">en savoir plus</span>.</p>
          
         </div >
       </section>
       <section class="container">
         <div class="categorie">
-          <div>
+          <div class="first">
             <p>Hôtels</p>
             <i class="fa-solid fa-bed"></i>
           </div>
@@ -72,6 +90,15 @@
             <p>Forums de voyage</p>
             <i class="fa-regular fa-comments"></i>
           </div>
+          <div class="plane-button">
+            <p>Vols</p>
+            <i class="fa-solid fa-plane"></i>
+          </div>
+          <div class="ship-button">
+            <p>Croisières</p>
+            <i class="fa-solid fa-ship"></i>
+        </div>
+
           <div>
             <p>Plus</p>
             <i class="fa-solid fa-ellipsis"></i>
@@ -80,7 +107,12 @@
        </section>
        
        <section class="container pictures">
-        <div class="left-bloc"><img src="./img/view.jpg" alt=""></div>
+        <div class="left-bloc"><img src="./img/view.jpg" alt="">
+        <div class="all-pics-button">
+          <i class="fa-regular fa-image"></i>
+          <p>Toutes les Photos</p>
+        </div>
+        </div>
         <div class="right-bloc">
           <div><img src="./img/caption-8.jpg" alt="" /></div>
           <div><img src="./img/caption-9.jpg" alt="" /></div>
@@ -88,10 +120,10 @@
       </section>
       <section class="container location">
         <div class="target-city">
-          <div>Europe </div> >
-          <div>France </div> >
-        <div>Ile-de-France </div> >
-          <div>paris <i class="fa-solid fa-arrow-down"></i> </div>
+          <div class="location-decoration">Europe </div> >
+          <div class="location-decoration">France </div> >
+        <div class="location-decoration">Ile-de-France </div> >
+          <div class="location-decoration">paris <i class="fa-solid fa-arrow-down"></i> </div>
         </div>
         <div>Visiter : Paris</div>
       </section>
@@ -110,40 +142,361 @@
             <button>Créez un voyage</button>
 
           </div>
-          <img src="./img/maps_cnuhsr.png" alt="">
+        
+         <img src="./img/maps_cnuhsr.png" alt="">
         </div>
       </section>
 
       <section class=" container paris-go-to">
-        <h2>Paris : les immanquables</h2>
+        <h2 class="paris">Paris : les immanquables</h2>
         <div class="carousel">
          <div class="carousel-side-text">
           <h2>Se divertir</h2>
-          <p>Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+          <p>Des lieux à voir, des rues à <br> explorer et des expériences emblématiques à Paris.</p>
           <p class="underline">Tout afficher</p>
         </div>
 
         <div class="scroll-container">
           <div class="carousel-element">
-            <img src="./img/carousel-monument/20180601-122841-largejpg.jpg" alt="">
-            <i class="fa-solid fa-circle circle-heart"></i>
+            <div class="img-logo">
+             <img src="./img/carousel-monument/20180601-122841-largejpg.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
             <h5>Musée d'Orsay</h5>
-            <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i> <i class="fa-solid fa-circle"></i><span> 139 901</span>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
             <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
 
           </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/arc-de-triomphe-at-night.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Arc de Triomphe</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Bâtiments architecturaux, Sites historiques</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/eiffeltoren.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Tour Eiffel</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Tours et plateformes d'observation, Monuments & Points d'intérêt</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/louvre.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Musée du Louvre</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Bâtiments architecturaux, Musées d'art</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/marche-vernaison-maison.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Marché aux Puces de Saint-Ouen</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Antiquaires, Marchés aux puces & Marchés de rue
+              Saint-Ouen,
+              France À 5,4 kilomètres de Paris</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/the-amazingly-detailed.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Cathédrale Notre-Dame de Paris</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Bâtiments architecturaux, Sites historiques</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/the-bookstore.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Librairie Shakespear and Company</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Bibliothèques, Grands magasins
+
+            </p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-monument/vue-de-la-cour-d-honneur.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Musée Rodin</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>Musées spécialisés
+
+            </p>
+
+          </div>
+          
+
+
           
         </div>
 
       </section>
+      <section class=" container paris-go-to">
+        <h2></h2>
+        <div class="carousel">
+         <div class="carousel-side-text">
+          <h2>Se restaurer</h2>
+          <p>Bistrots et bars typiques, et plus encore à Paris.</p>
+          <p class="underline">Tout afficher</p>
+        </div>
 
+        <div class="scroll-container">
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-resto/meal1.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Vive les huîtres</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>€€€€ · Française, Moderne, Bar à vins</p>
 
-       
-       
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-resto/meal2.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Bistrot chic</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>€€€ · Française, Européenne, Saine, Moderne</p>
 
-       
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-resto/meal3.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>ASPIC</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>€€€€ · Française, Européenne, Saine</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-resto/meal4.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Verjus</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>€€€ · Française, Européenne, Moderne</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-resto/meal5.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>114 Faubourg</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>€€ · Française, Européenne, Végétariens bienvenus</p>
+
+          </div>
+          <div class="carousel-element">
+            <div class="img-logo">
+             <img src="./img/carousel-resto/meal6.jpg" alt="">
+             <div class="heart-logo">
+              <i class="fa-regular fa-heart heart"></i>
+             </div>
+             <div class="img-owl">
+              <img src="./img/carousel-monument/Vertical-Banner_1080-x-1350_V2_TC-640x800.png" alt="">
+             </div>
+            </div>
+           
+            <h5>Frenchie</h5>
+            <div class="rating-circle">
+             <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i> <i class="fa-solid fa-circle green-circle"></i><span> 139 901</span>
+            </div>
+            <p>€€€€ · Française, Végétariens bienvenus, Plats sans gluten</p>
+
+          </div>
+        </div>
+
+      </section>
+      <section class="container travellers-guide">
+       <h2>Guides de voyageurs</h2>
+       <div class="top-to-do">
+        <div>
+          <img src="img/travellers-guide/visit1.jpg" alt="">
+          <h5>Best summer things to do in Paris | Eatwith</h5>
+          <p>36 articles</p>
+          <div class="editor">
+            <img src="img/logo/forks-icon.jpg" alt="">
+            <p>Par <span>Eatwith</span></p>
+          </div>
+          
+        </div>
+        <div>
+          <img src="img/travellers-guide/visit2.jpg" alt="">
+          <h5>Les 10 monuments et musées de Paris à faire</h5>
+          <p>10 articles</p>
+          <div class="editor">
+            <img src="img/logo/topito-com.jpg" alt="">
+            <p>Par <span>Topito</span></p>
+          </div>
+          
+        </div>
+        <div>
+          <img src="img/travellers-guide/visit3.jpg" alt="">
+          <h5>Top 10 des choses à faire ou à voir dans le 14ème
+          </h5>
+          <p>10 articles</p>
+          <div class="editor">
+            <img src="img/logo/topito-com.jpg" alt="">
+            <p>Par <span>Topito</span></p>
+          </div>
+          
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class=" container footer">
+        <img src="img/logo/trip-advisor-icon4470.jpg" alt="">
+        <p>Made at <span>Le Reacteur</span> by <span>Geo</span></p>
+      </div>
+    </footer>
   </body>
 </html>
+<!-- -------------------------  ------- -->
+
+<!-- ---------------------form--------- -->
+ <!-- <section id="section-form">
+   <form id="form">
+    <label for="firstname">Prénom</label>
+    <input type="text" name="firstname" id="firstname" value="Geo" />
+    <label for="lastname">nom de la fam</label>
+    <input type="text" name="lastname" id="lastname" value="Mag" />
+    <label for="email">mail</label>
+    <input type="email" name="email" id="email" value="Geoc@mail.com" />
+    <label for="message">message</label>
+    <textarea name="message" id="message" cols="30" rows="10">
+ Hello world</textarea
+    >
+    <button>Envoyer le formulaire</button>
+    <p id="succes" class="hiden" style="color: green">SUCCES</p>
+   </form>
+</section> -->
+
